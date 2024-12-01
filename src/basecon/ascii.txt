@@ -1,0 +1,129 @@
+decimal,binary,hex,character,htmlCode,escapeCode,description
+0,00000000,00,[NUL],&#0;,\0,Null character - Used to terminate strings in C/C++, represents no data
+1,00000001,01,[SOH],&#1;,\x01,Start of Heading - Marks the beginning of a message header in data transmission
+2,00000010,02,[STX],&#2;,\x02,Start of Text - Indicates the beginning of actual message content in data transmission
+3,00000011,03,[ETX],&#3;,\x03,End of Text - Marks the end of transmitted text data, often used as CTRL+C for interrupt
+4,00000100,04,[EOT],&#4;,\x04,End of Transmission - Signals the end of a transmission session
+5,00000101,05,[ENQ],&#5;,\x05,Enquiry - Requests a response from the receiving device, used for connection testing
+6,00000110,06,[ACK],&#6;,\x06,Acknowledge - Positive acknowledgment response to received data
+7,00000111,07,[BEL],&#7;,\a,Bell - Triggers an audible or visible alert, originally rang a physical bell
+8,00001000,08,[BS],&#8;,\b,Backspace - Moves cursor one position backward, often used to delete previous character
+9,00001001,09,[HT],&#9;,\t,Horizontal Tab - Moves cursor to next tab stop, commonly used for indentation
+10,00001010,0A,[LF],&#10;,\n,Line Feed - Moves cursor to next line, Unix-style newline
+11,00001011,0B,[VT],&#11;,\v,Vertical Tab - Moves cursor down vertically, rarely used in modern systems
+12,00001100,0C,[FF],&#12;,\f,Form Feed - Advances to next page, historically moved printer paper
+13,00001101,0D,[CR],&#13;,\r,Carriage Return - Moves cursor to line start, combined with LF for Windows newline
+14,00001110,0E,[SO],&#14;,\x0E,Shift Out - Switches to alternate character set, historically used in printers
+15,00001111,0F,[SI],&#15;,\x0F,Shift In - Returns to standard character set after Shift Out
+16,00010000,10,[DLE],&#16;,\x10,Data Link Escape - Changes meaning of subsequent characters for transmission control
+17,00010001,11,[DC1],&#17;,\x11,Device Control 1 - XON signal to resume data transmission
+18,00010010,12,[DC2],&#18;,\x12,Device Control 2 - Turns on auxiliary device, device-specific function
+19,00010011,13,[DC3],&#19;,\x13,Device Control 3 - XOFF signal to pause data transmission
+20,00010100,14,[DC4],&#20;,\x14,Device Control 4 - Turns off auxiliary device, device-specific function
+21,00010101,15,[NAK],&#21;,\x15,Negative Acknowledge - Indicates received data was invalid or corrupted
+22,00010110,16,[SYN],&#22;,\x16,Synchronous Idle - Maintains timing in synchronized data streams
+23,00010111,17,[ETB],&#23;,\x17,End of Transmission Block - Marks end of a block of data for transmission
+24,00011000,18,[CAN],&#24;,\x18,Cancel - Indicates previous data should be disregarded
+25,00011001,19,[EM],&#25;,\x19,End of Medium - Signals physical end of medium like tape or paper
+26,00011010,1A,[SUB],&#26;,\x1A,Substitute - Replaces corrupted or invalid character, EOF marker in Windows
+27,00011011,1B,[ESC],&#27;,\e,Escape - Starts an escape sequence, used to trigger special functions
+28,00011100,1C,[FS],&#28;,\x1C,File Separator - Delimits files in data streams
+29,00011101,1D,[GS],&#29;,\x1D,Group Separator - Delimits groups of records in data streams
+30,00011110,1E,[RS],&#30;,\x1E,Record Separator - Delimits records in data streams
+31,00011111,1F,[US],&#31;,\x1F,Unit Separator - Delimits units of data within records
+32,00100000,20,[SPACE],&#32;,[SPACE],Space
+33,00100001,21,!,&#33;,!,Punctuation
+34,00100010,22,",&#34;,\",Punctuation
+35,00100011,23,#,&#35;,#,Punctuation
+36,00100100,24,$,&#36;,$,Punctuation
+37,00100101,25,%,&#37;,%,Punctuation
+38,00100110,26,&,&#38;,&,Punctuation
+39,00100111,27,',&#39;,\',Punctuation
+40,00101000,28,(,&#40;,(,Punctuation
+41,00101001,29,),&#41;,),Punctuation
+42,00101010,2A,*,&#42;,*,Punctuation
+43,00101011,2B,+,&#43;,+,Punctuation
+44,00101100,2C,",",&#44;,",",Punctuation
+45,00101101,2D,-,&#45;,-,Punctuation
+46,00101110,2E,.,&#46;,.,Punctuation
+47,00101111,2F,/,&#47;,/,Punctuation
+48,00110000,30,0,&#48;,0,Digit
+49,00110001,31,1,&#49;,1,Digit
+50,00110010,32,2,&#50;,2,Digit
+51,00110011,33,3,&#51;,3,Digit
+52,00110100,34,4,&#52;,4,Digit
+53,00110101,35,5,&#53;,5,Digit
+54,00110110,36,6,&#54;,6,Digit
+55,00110111,37,7,&#55;,7,Digit
+56,00111000,38,8,&#56;,8,Digit
+57,00111001,39,9,&#57;,9,Digit
+58,00111010,3A,:,&#58;,:,Punctuation
+59,00111011,3B,;,&#59;,;,Punctuation
+60,00111100,3C,<,&#60;,<,Punctuation
+61,00111101,3D,=,&#61;,=,Punctuation
+62,00111110,3E,>,&#62;,>,Punctuation
+63,00111111,3F,?,&#63;,?,Punctuation
+64,01000000,40,@,&#64;,@,Punctuation
+65,01000001,41,A,&#65;,A,Uppercase letter
+66,01000010,42,B,&#66;,B,Uppercase letter
+67,01000011,43,C,&#67;,C,Uppercase letter
+68,01000100,44,D,&#68;,D,Uppercase letter
+69,01000101,45,E,&#69;,E,Uppercase letter
+70,01000110,46,F,&#70;,F,Uppercase letter
+71,01000111,47,G,&#71;,G,Uppercase letter
+72,01001000,48,H,&#72;,H,Uppercase letter
+73,01001001,49,I,&#73;,I,Uppercase letter
+74,01001010,4A,J,&#74;,J,Uppercase letter
+75,01001011,4B,K,&#75;,K,Uppercase letter
+76,01001100,4C,L,&#76;,L,Uppercase letter
+77,01001101,4D,M,&#77;,M,Uppercase letter
+78,01001110,4E,N,&#78;,N,Uppercase letter
+79,01001111,4F,O,&#79;,O,Uppercase letter
+80,01010000,50,P,&#80;,P,Uppercase letter
+81,01010001,51,Q,&#81;,Q,Uppercase letter
+82,01010010,52,R,&#82;,R,Uppercase letter
+83,01010011,53,S,&#83;,S,Uppercase letter
+84,01010100,54,T,&#84;,T,Uppercase letter
+85,01010101,55,U,&#85;,U,Uppercase letter
+86,01010110,56,V,&#86;,V,Uppercase letter
+87,01010111,57,W,&#87;,W,Uppercase letter
+88,01011000,58,X,&#88;,X,Uppercase letter
+89,01011001,59,Y,&#89;,Y,Uppercase letter
+90,01011010,5A,Z,&#90;,Z,Uppercase letter
+91,01011011,5B,[,&#91;,[,Punctuation
+92,01011100,5C,\,&#92;,\\,Punctuation
+93,01011101,5D,],&#93;,],Punctuation
+94,01011110,5E,^,&#94;,^,Punctuation
+95,01011111,5F,_,&#95;,_,Punctuation
+96,01100000,60,`,&#96;,`,Punctuation
+97,01100001,61,a,&#97;,a,Lowercase letter
+98,01100010,62,b,&#98;,b,Lowercase letter
+99,01100011,63,c,&#99;,c,Lowercase letter
+100,01100100,64,d,&#100;,d,Lowercase letter
+101,01100101,65,e,&#101;,e,Lowercase letter
+102,01100110,66,f,&#102;,f,Lowercase letter
+103,01100111,67,g,&#103;,g,Lowercase letter
+104,01101000,68,h,&#104;,h,Lowercase letter
+105,01101001,69,i,&#105;,i,Lowercase letter
+106,01101010,6A,j,&#106;,j,Lowercase letter
+107,01101011,6B,k,&#107;,k,Lowercase letter
+108,01101100,6C,l,&#108;,l,Lowercase letter
+109,01101101,6D,m,&#109;,m,Lowercase letter
+110,01101110,6E,n,&#110;,n,Lowercase letter
+111,01101111,6F,o,&#111;,o,Lowercase letter
+112,01110000,70,p,&#112;,p,Lowercase letter
+113,01110001,71,q,&#113;,q,Lowercase letter
+114,01110010,72,r,&#114;,r,Lowercase letter
+115,01110011,73,s,&#115;,s,Lowercase letter
+116,01110100,74,t,&#116;,t,Lowercase letter
+117,01110101,75,u,&#117;,u,Lowercase letter
+118,01110110,76,v,&#118;,v,Lowercase letter
+119,01110111,77,w,&#119;,w,Lowercase letter
+120,01111000,78,x,&#120;,x,Lowercase letter
+121,01111001,79,y,&#121;,y,Lowercase letter
+122,01111010,7A,z,&#122;,z,Lowercase letter
+123,01111011,7B,{,&#123;,{,Punctuation
+124,01111100,7C,|,&#124;,|,Punctuation
+125,01111101,7D,},&#125;,},Punctuation
+126,01111110,7E,~,&#126;,~,Punctuation
+127,01111111,7F,[DEL],&#127;,\x7F,Delete character
